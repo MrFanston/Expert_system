@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<knowledgeBase>
+	<facts>
+		<fact>
+			<name>Любознательный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Аналитический</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Смелый</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Настойчивый</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Оптимистичный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Энергичный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Творческий</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Дружелюбный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Хитрый</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Жадный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Добросердечный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Интеллектуальный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Таинственный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Исследователь</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Имеет шесть пальцев</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Коварный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Загадочный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Сверхъестественный</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Манипулятор</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Ищет ответы на сложные вопросы</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Приносит радость окружающим</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Представляет опасность для других</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Опытный в мошенничестве</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Умеет зарабатывать деньги</name>
+			<finish>false</finish>
+		</fact>
+		<fact>
+			<name>Диппер</name>
+			<finish file="images/Dipper.png" >true</finish>
+		</fact>
+		<fact>
+			<name>Мейбл</name>
+			<finish file="images/Mayble.png" >true</finish>
+		</fact>
+		<fact>
+			<name>Стен</name>
+			<finish file="images/Sten.png" >true</finish>
+		</fact>
+		<fact>
+			<name>Форд</name>
+			<finish file="images/Ford.png" >true</finish>
+		</fact>
+		<fact>
+			<name>Билл</name>
+			<finish file="images/Bill.png" >true</finish>
+		</fact>
+	</facts>
+	<rules>
+		<rule conclusion="Ищет ответы на сложные вопросы">
+			<condition>Любознательный</condition>
+			<condition>Аналитический</condition>
+		</rule>
+		<rule conclusion="Приносит радость окружающим">
+			<condition>Энергичный</condition>
+			<condition>Дружелюбный</condition>
+		</rule>
+		<rule conclusion="Представляет опасность для других">
+			<condition>Коварный</condition>
+			<condition>Сверхъестественный</condition>
+		</rule>
+		<rule conclusion="Опытный в мошенничестве">
+			<condition>Хитрый</condition>
+			<condition>Коварный</condition>
+		</rule>
+		<rule conclusion="Умеет зарабатывать деньги">
+			<condition>Хитрый</condition>
+			<condition>Жадный</condition>
+		</rule>
+		<rule conclusion="Диппер">
+			<condition>Ищет ответы на сложные вопросы</condition>
+			<condition>Настойчивый</condition>
+		</rule>
+		<rule conclusion="Диппер">
+			<condition>Смелый</condition>
+			<condition>Настойчивый</condition>
+		</rule>
+		<rule conclusion="Мейбл">
+			<condition>Приносит радость окружающим</condition>
+			<condition>Творческий</condition>
+		</rule>
+		<rule conclusion="Мейбл">
+			<condition>Оптимистичный</condition>
+			<condition>Дружелюбный</condition>
+		</rule>
+		<rule conclusion="Стен">
+			<condition>Умеет зарабатывать деньги</condition>
+			<condition>Творческий</condition>
+		</rule>
+		<rule conclusion="Стен">
+			<condition>Опытный в мошенничестве</condition>
+			<condition>Добросердечный</condition>
+		</rule>
+		<rule conclusion="Форд">
+			<condition>Ищет ответы на сложные вопросы</condition>
+			<condition>Таинственный</condition>
+		</rule>
+		<rule conclusion="Форд">
+			<condition>Интеллектуальный</condition>
+			<condition>Имеет шесть пальцев</condition>
+		</rule>
+		<rule conclusion="Билл">
+			<condition>Представляет опасность для других</condition>
+			<condition>Манипулятор</condition>
+		</rule>
+		<rule conclusion="Билл">
+			<condition>Сверхъестественный</condition>
+			<condition>Загадочный</condition>
+		</rule>
+		<rule conclusion="Билл">
+			<condition>Представляет опасность для других</condition>
+			<condition>Опытный в мошенничестве</condition>
+		</rule>
+	</rules>
+</knowledgeBase>
+
